@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>HTML Academy: Мишка</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+  <header class="page-header">
+    <div class="page-header__top">
+      <div class="wrapper">
+        <a href="index.html" class="page-header__logo logo">
+          <img src="#" alt="" class="logo__img">
+        </a>
+        <button class="page-header__toggle toggle" aria-label="Открыть/закрыть меню"></button>
+        <div class="page-header__menu">
+          <nav class="page-header__nav nav">
+            <ul class="nav__list">
+              <li class="nav__item">
+                <a href="catalog.html" class="nav__link">
+                  Каталог товаров
+                </a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link">
+                  Вязание на заказ
+                </a>
+              </li>
+              <li class="nav__item">
+                <a href="" class="nav__link">
+                  Новые поступления
+                </a>
+              </li>
+              <li class="nav__item">
+                <a href="" class="nav__link">
+                  Распродажа
+                </a>
+              </li>
+            </ul>
+          </nav>
+          <form class="page-header__search" action="https://echo.htmlacademy.ru" method="post">
+            <input type="search" class="search__input" id="search" name="search">
+            <label class="search__label" for="search">Поиск по сайту</label>
+          </form>
+          <a href="#" class="page-header__cart cart">
+            Корзина: пока пуста
+          </a>
+        </div>
+        <p class="page-header__delivery">
+          Бесплатная доставка по России
+        </p>
+      </div>
+    </div>
+  </header>
+  <section class="order">
+    <div class="annotation">
+      <h1 class="annotation__title title">
+        Каталог товаров
+      </h1>
+    </div>
+    <div class="wrapper">
+      <p class="order__descript">
+        Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.
+      </p>
+    </div>
+    <form action="https://echo.htmlacademy.ru" method="post" class="order__form form">
+      <fieldset class="form__item">
+        <legend class="form__legend">
+          Тип
+        </legend>
+        <div class="form__container">
+          <div class="form__container-item">
+            <input type="radio" class="form__radio" id="accessories" name="type">
+            <label for="accessories" class="form__label form__radio-label">Аксессуар для интерьера</label>
+          </div>
+          <div class="form__container-item">
+            <input type="radio" class="form__radio" id="toy" name="type">
+            <label for="toy" class="form__label form__radio-label">Детская игрушка</label>
+          </div>
+        </div>
+      </fieldset>
+      <fieldset class="form__item">
+        <legend class="form__legend">
+          Цвет
+        </legend>
+        <div class="form__container">
+          <div class="form__list-container">
+            <ul class="form__list">
+              <li class="form__list-item">
+                <input type="checkbox" class="form__checkbox" id="white" name="white">
+                <label for="white" class="form__label form__checkbox-label">Белый</label>
+              </li>
+              <li class="form__list-item">
+                <input type="checkbox" class="form__checkbox" id="grey" name="grey">
+                <label for="grey" class="form__label form__checkbox-label">Серый</label>
+              </li>
+              <li class="form__list-item">
+                <input type="checkbox" class="form__checkbox" id="tiffany" name="tiffany">
+                <label for="tiffany" class="form__label form__checkbox-label">«Тиффани»</label>
+              </li>
+              <li class="form__list-item">
+                <input type="checkbox" class="form__checkbox" id="black" name="black">
+                <label for="black" class="form__label form__checkbox-label">Черный</label>
+              </li>
+              <li class="form__list-item">
+                <input type="checkbox" class="form__checkbox" id="pink" name="pink">
+                <label for="pink" class="form__label form__checkbox-label">Розовый</label>
+              </li>
+              <li class="form__list-item">
+                <input type="checkbox" class="form__checkbox" id="orange" name="orange">
+                <label for="orange" class="form__label form__checkbox-label">Оранжевый</label>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </fieldset>
+      <fieldset class="form__item">
+        <legend class="form__legend">
+          Фио
+        </legend>
+        <div class="form__container">
+          <div class="form__container-item">
+            <label for="user-name" class="form__label">Имя:</label>
+            <input type="text" class="form__input" id="user-name" name="user-name" placeholder="Введите ваше имя*">
+          </div>
+          <div class="form__container-item">
+            <label for="surname" class="form__label">Фамилия:</label>
+            <input type="text" class="form__input" id="surname" name="surname" placeholder="Укажите фамилию*">
+          </div>
+          <div class="form__container-item">
+            <label for="patronymic" class="form__label">Отчество:</label>
+            <input type="text" class="form__input" id="patronymic" name="patronymic" placeholder="Отчество, если желаете">
+          </div>
+        </div>
+      </fieldset>
+      <fieldset class="form__item">
+        <legend class="form__legend">
+          Тел
+        </legend>
+        <div class="form__container form__container--tel">
+          <label for="tel" class="visually-hidden">Ваш номер телефона</label>
+          <input type="tel" class="form__input" name="tel" id="tel" placeholder="+7 ХХХ ХХХ ХХ ХХ*">
+        </div>
+      </fieldset>
+      <fieldset class="form__item">
+        <legend class="form__legend">
+          E-mail
+        </legend>
+        <div class="form__container form__container--email">
+          <label for="email" class="visually-hidden">Ваша почта</label>
+          <input type="email" class="form__input" name="email" id="email" placeholder="Ваш Email*">
+        </div>
+      </fieldset>
+      <fieldset class="form__item">
+        <legend class="form__legend">
+          Доп
+        </legend>
+        <div class="form__container">
+          <textarea class="form__textarea" name="wishings" id="wishings" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+        </div>
+      </fieldset>
+      <div class="form__button-container">
+        <button type="submit" class="form__button button">Отправить заказ</button>
+        <span class="form__note">
+          *Поля обязательны для заполнения
+        </span>
+      </div>
+    </form>
+  </section>
+  <footer class="footer">
+      <div class="wrapper">
+        <div class="footer__flex">
+          <a href="index.html" class="footer__logo logo"></a>
+          <div class="footer__social social">
+            <ul class="social__list">
+              <li class="social__item">
+                <a href="#" class="social__link" aria-label="Mishka в Instagram">
+                </a>
+              </li>
+              <li class="social__item">
+                <a href="#" class="social__link" aria-label="Mishka в Facebook">
+                </a>
+              </li>
+              <li class="social__item">
+                <a href="#" class="social__link" aria-label="Mishka в Twitter">
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__copyright copyright">
+            <p class="copyright__text">
+              Разработано:
+            </p>
+            <a href="https://htmlacademy.ru/intensive/adaptive" class="copyright__link" aria-label="Сайт HTML Academy">
+              <!-- <svg class="copyright__img" width="27" height="34">
+              </svg> -->
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+</body>
+</html>

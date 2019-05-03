@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>HTML Academy: Мишка</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+  <header class="page-header">
+    <div class="page-header__top">
+      <div class="wrapper">
+        <a href="index.html" class="page-header__logo logo">
+          <img src="#" alt="" class="logo__img">
+        </a>
+        <button class="page-header__toggle toggle" aria-label="Открыть/закрыть меню"></button>
+        <div class="page-header__menu">
+          <nav class="page-header__nav nav">
+            <ul class="nav__list">
+              <li class="nav__item">
+                <a class="nav__link">
+                  Каталог товаров
+                </a>
+              </li>
+              <li class="nav__item">
+                <a href="form.html" class="nav__link">
+                  Вязание на заказ
+                </a>
+              </li>
+              <li class="nav__item">
+                <a href="" class="nav__link">
+                  Новые поступления
+                </a>
+              </li>
+              <li class="nav__item">
+                <a href="" class="nav__link">
+                  Распродажа
+                </a>
+              </li>
+            </ul>
+          </nav>
+          <form class="page-header__search" action="https://echo.htmlacademy.ru" method="post">
+            <input type="search" class="search__input" id="search" name="search">
+            <label class="search__label" for="search">Поиск по сайту</label>
+          </form>
+          <a href="#" class="page-header__cart cart">
+            Корзина: пока пуста
+          </a>
+        </div>
+        <p class="page-header__delivery">
+          Бесплатная доставка по России
+        </p>
+      </div>
+    </div>
+  </header>
+  <section class="goods">
+    <div class="annotation">
+      <h1 class="annotation__title title">
+        Каталог товаров
+      </h1>
+    </div>
+    <div class="wrapper">
+      <div class="goods__list-container">
+        <ul class="goods__list">
+          <li class="goods__item">
+            <picture>
+              <img src="#" alt="Зайчик-попрыгайчик" class="goods__img" width="260" height="195">
+            </picture>
+            <div class="goods__container">
+              <div class="goods__info">
+                <h2 class="goods__title">
+                  Зайчик-попрыгайчик
+                </h2>
+                <p class="goods__descript">
+                  Рост 30 см, вес 200 г
+                </p>
+              </div>
+              <div class="goods__amount">
+                <p class="goods__price">1 200 руб.</p>
+                <button type="button" class="goods__button" aria-label="Добавить в корзину"></button>
+              </div>
+            </div>
+          </li>
+          <li class="goods__item">
+            <picture>
+              <img src="#" alt="Корзинка для белья" class="goods__img" width="260" height="195">
+            </picture>
+            <div class="goods__container">
+              <div class="goods__info">
+                <h2 class="goods__title">
+                  Корзинка для белья
+                </h2>
+                <p class="goods__descript">
+                  Диаметр 15 см, высота 10 см
+                </p>
+              </div>
+              <div class="goods__amount">
+                <p class="goods__price">690 руб.</p>
+                <button type="button" class="goods__button" aria-label="Добавить в корзину"></button>
+              </div>
+            </div>
+          </li>
+          <li class="goods__item">
+            <picture>
+              <img src="#" alt="Большая корзинка для игрушек" class="goods__img" width="260" height="195">
+            </picture>
+            <div class="goods__container">
+              <div class="goods__info">
+                <h2 class="goods__title">
+                  Большая корзинка для игрушек
+                </h2>
+                <p class="goods__descript">
+                  Диаметр 30 см, высота 30 см
+                </p>
+              </div>
+              <div class="goods__amount">
+                <p class="goods__price">1 500 руб.</p>
+                <button type="button" class="goods__button" aria-label="Добавить в корзину"></button>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  <section class="creating">
+    <div class="wrapper">
+      <div class="creating__item">
+        <picture>
+          <img src="#" alt="Создание корзинки" class="creating__img">
+        </picture>
+        <div class="creating__info">
+          <h3 class="creating__title">
+            Процесс производства
+          </h3>
+          <p class="creating__descript">
+            По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.
+          </p>
+          <a href="#" class="creating__button button">Сделать заказ</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer class="footer">
+    <div class="wrapper">
+      <div class="footer__flex">
+        <a href="index.html" class="footer__logo logo"></a>
+        <div class="footer__social social">
+          <ul class="social__list">
+            <li class="social__item">
+              <a href="#" class="social__link" aria-label="Mishka в Instagram">
+              </a>
+            </li>
+            <li class="social__item">
+              <a href="#" class="social__link" aria-label="Mishka в Facebook">
+              </a>
+            </li>
+            <li class="social__item">
+              <a href="#" class="social__link" aria-label="Mishka в Twitter">
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__copyright copyright">
+          <p class="copyright__text">
+            Разработано:
+          </p>
+          <a href="https://htmlacademy.ru/intensive/adaptive" class="copyright__link" aria-label="Сайт HTML Academy">
+            <!-- <svg class="copyright__img" width="27" height="34">
+            </svg> -->
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
