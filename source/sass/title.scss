@@ -1,0 +1,21 @@
+.title {
+  margin: 0;
+  font-size: 27px;
+  font-weight: 700;
+  line-height: 30px;
+  text-align: center;
+}
+
+@media (min-width: $tablet) {
+  .title {
+    font-size: 43px;
+    line-height: 50px;
+  }
+}
+
+@media (min-width: $desktop) {
+  .title {
+    font-size: 53px;
+    line-height: 57px;
+  }
+}

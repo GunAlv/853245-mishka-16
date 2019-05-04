@@ -1,0 +1,90 @@
+.toggle {
+  position: relative;
+  width: 20px;
+  height: 14px;
+  display: block;
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+
+.toggle::after {
+  position: absolute;
+  content: "";
+  top: -4px;
+  left: 0;
+  width: 20px;
+  height: 1px;
+  box-shadow: 0 3px 0 0 #000000, 0 9px 0 0 #000000, 0 15px 0 0 #000000;
+  transition: 0.4s;
+}
+
+.toggle:hover::after,
+.toggle:focus::after {
+  box-shadow: 0 3px 0 0 $blue, 0 9px 0 0 $blue, 0 15px 0 0 $blue;
+}
+
+.toggle:active::after {
+  opacity: 0.3;
+}
+
+.toggle--close {
+  width: 24px;
+  height: 24px;
+  display: block;
+  background-color: transparent;
+  border: none;
+  position: relative;
+  right: 0;
+  transition: 0.4s;
+}
+
+.toggle--close::before,
+.toggle--close::after {
+  position: absolute;
+  content: "";
+  width: 2px;
+  height: 26px;
+  top: -1px;
+  left: 12px;
+  border-radius: 5px;
+  background-color: #000000;
+  box-shadow: none;
+}
+
+.toggle--close::before {
+  transform: rotate(45deg);
+}
+
+.toggle--close::after {
+  transform: rotate(-45deg);
+}
+
+.toggle--close:hover::before,
+.toggle--close:hover::after {
+  box-shadow: none;
+  background-color: $blue;
+}
+
+.toggle--close:focus::before,
+.toggle--close:focus::after {
+  box-shadow: none;
+  background-color: $blue;
+}
+
+.toggle--close:active::before,
+.toggle--close:active::after {
+  box-shadow: none;
+  opacity: 0.3;
+}
+
+.toggle--no-js {
+  display: none;
+}
+
+@media (min-width: $tablet) {
+  .toggle {
+    display: none;
+  }
+}
