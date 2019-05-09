@@ -1,1 +1,212 @@
-// .good-week__
+.good-week {
+  padding-top: 28px;
+  padding-bottom: 145px;
+  position: relative;
+
+  &::after {
+    position: absolute;
+    content: "";
+    background-image: url("../img/bg-zigzag-line.svg");
+    background-repeat: repeat-x;
+    width: 100%;
+    height: 10px;
+    bottom: 0;
+    background-size: auto 6px;
+    transform: rotate(180deg);
+  }
+}
+
+.good-week__note {
+  margin: 0;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: $blue;
+}
+
+.good-week__texts {
+  margin-bottom: 23px;
+}
+
+.good-week__title {
+  margin-bottom: 3px;
+}
+
+.good-week__descript {
+  margin: 0;
+  color: $grey;
+  font-size: 15px;
+  line-height: 24px;
+  margin-bottom: 18px;
+}
+
+.good-week__table {
+  font-size: 15px;
+  line-height: 20px;
+  color: $grey;
+}
+
+.good-week__table tr {
+  margin-bottom: 20px;
+  display: flex;
+  position: relative;
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: 260px;
+    height: 1px;
+    background-color: #ececec;
+    bottom: -8px;
+  }
+}
+
+.good-week__table-feature {
+  min-width: 70px;
+}
+
+.good-week__table-descript {
+  min-width: 130px;
+  margin-left: 25px;
+}
+
+.good-week__img {
+  display: block;
+  margin-top: -90px;
+  margin-bottom: 23px;
+}
+
+.good-week__price {
+  margin: 0;
+  font-weight: 700;
+  line-height: 24px;
+  color: $grey;
+  margin-bottom: 30px;
+}
+
+.good-week__flex {
+  width: 100%;
+  text-align: center;
+  position: relative;
+  top: 360px;
+}
+
+.good-week__button {
+  width: 100%;
+}
+
+@media (min-width: $tablet) {
+  .good-week {
+    padding-top: 45px;
+    padding-bottom: 70px;
+
+    &::after {
+      height: 17px;
+      background-position: -15px 0;
+      background-size: 768px 17px;
+    }
+  }
+
+  .good-week__note {
+    line-height: 17px;
+    width: 70px;
+    text-align: center;
+  }
+
+  .good-week__texts {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 28px;
+    margin-bottom: 45px;
+  }
+
+  .good-week__table {
+    margin-bottom: 35px;
+  }
+
+  .good-week__container {
+    width: 334px;
+  }
+
+  .good-week__descript {
+    width: 290px;
+    font-size: 17px;
+    line-height: 30px;
+    margin-bottom: 46px;
+  }
+
+  .good-week__table tr::after {
+    width: 290px;
+  }
+
+  .good-week__img {
+    width: 333px;
+    height: 404px;
+    margin: 0;
+  }
+
+  .good-week__button {
+    width: 292px;
+  }
+
+  .good-week__price {
+    font-size: 20px;
+    margin-bottom: 35px;
+  }
+
+  .good-week__flex {
+    position: static;
+    width: 292px;
+  }
+
+  .good-week__columns {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+}
+
+@media (min-width: $desktop) {
+  .good-week {
+    padding-top: 125px;
+    padding-bottom: 90px;
+
+    &::after {
+      height: 23px;
+      background-size: 1150px 23px;
+    }
+  }
+
+  .good-week__img {
+    width: 525px;
+    height: 636px;
+    margin-top: -160px;
+    position: relative;
+    z-index: -1;
+  }
+
+  .good-week__texts {
+    justify-content: flex-end;
+    flex-direction: row-reverse;
+    padding-left: 47px;
+  }
+
+  .good-week .good-week__title {
+    margin-left: 58px;
+  }
+
+  .good-week__container {
+    margin-left: 175px;
+  }
+
+  .good-week__descript {
+    margin-bottom: 55px;
+  }
+
+  .good-week__table {
+    margin-bottom: 90px;
+  }
+}

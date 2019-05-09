@@ -98,102 +98,127 @@
     <section class="good-week">
       <div class="wrapper">
         <div class="good-week__texts">
-          <h2 class="good-week__title title">
+          <h2 class="good-week__title title title--left">
             Вязаные корзинки
           </h2>
           <p class="good-week__note">
             Товар недели
           </p>
         </div>
-        <p class="good-week__descript">
-          Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.
-        </p>
-        <table class="good-week__table">
-          <tbody>
-            <tr>
-              <td>
-                Цвет:
-              </td>
-              <td>
-                «Тиффани»/серый
-              </td>
-            </tr>
-            <tr>
-              <td>
-                Диаметр:
-              </td>
-              <td>
-                25 см
-              </td>
-            </tr>
-            <tr>
-              <td>
-                Высота:
-              </td>
-              <td>
-                15 см
-              </td>
-            </tr>
-          </tbody>
-        </table>
-        <p class="good-week__price">
-          Цена: 990 руб.
-        </p>
-        <a href="#" class="good-week__button button">
-          Заказать
-        </a>
+        <div class="good-week__columns">
+          <div class="good-week__container">
+            <p class="good-week__descript">
+              Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.
+            </p>
+            <table class="good-week__table">
+              <tbody>
+                <tr>
+                  <td class="good-week__table-feature">
+                    Цвет:
+                  </td>
+                  <td class="good-week__table-descript">
+                    «Тиффани»/серый
+                  </td>
+                </tr>
+                <tr>
+                  <td class="good-week__table-feature">
+                    Диаметр:
+                  </td>
+                  <td class="good-week__table-descript">
+                    25 см
+                  </td>
+                </tr>
+                <tr>
+                  <td class="good-week__table-feature">
+                    Высота:
+                  </td>
+                  <td class="good-week__table-descript">
+                    15 см
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <div class="good-week__flex">
+              <p class="good-week__price">
+                Цена: 990 руб.
+              </p>
+              <a href="#" class="good-week__button button">
+                Заказать
+              </a>
+            </div>
+          </div>
+          <picture>
+            <source media="(min-width: 1150px)" srcset="img/triple-set-desktop@1x.jpg">
+            <source media="(min-width: 768px)" srcset="img/triple-set-tablet@1x.jpg">
+            <img src="img/triple-set-mobile@1x.jpg" alt="Вязаные корзинки" class="good-week__img" width="260" height="315">
+          </picture>
+        </div>
       </div>
     </section>
     <section class="us">
-      <div class="wrapper">
-        <h2 class="us__title title">
+      <div class="wrapper wrapper--desktop">
+        <h2 class="us__title title title--left">
           Коротко о нас
         </h2>
+      <div class="us__flex">
         <ul class="us__list">
-          <li class="us__item">
-            Экологически
+          <li class="us__item us__item--materials">
+            Экологически <br>
             чистые материалы
           </li>
-          <li class="us__item">
-            Скандинавский стиль
+          <li class="us__item us__item--style">
+            Скандинавский стиль <br>
             по российской цене
           </li>
-          <li class="us__item">
-            Увеличивает лайки
+          <li class="us__item us__item--likes">
+            Увеличивает лайки <br>
             на фотографиях
           </li>
-          <li class="us__item">
-            Связано вручную с
-            любовью и умилением
-          </li>
-          <li class="us__item">
-            Поддержка отечественного производителя
-          </li>
-          <li class="us__item">
-            Поставляется в
-            подарочной упаковке
-          </li>
-        </ul>
+          </ul>
+          <ul class="us__list us__list--second">
+            <li class="us__item us__item--hand">
+              Связано вручную с <br>
+              любовью и умилением
+            </li>
+            <li class="us__item us__item--native">
+              Поддержка отечественного <br>
+              производителя
+            </li>
+            <li class="us__item us__item--present">
+              Поставляется в <br>
+              подарочной упаковке
+            </li>
+          </ul>
+        </div>
       </div>
     </section>
     <section class="reviews">
-      <div class="wrapper">
+      <div class="wrapper wrapper--desktop">
         <div class="reviews__flex">
-          <h2 class="reviews__title title">
+          <h2 class="reviews__title title title--left">
             Отзывы
           </h2>
           <a href="#" class="reviews__button button">
             Написать
           </a>
         </div>
-        <p class="reviews__text">
-          Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!
-        </p>
-        <div class="reviews__flex">
-          <p class="reviews__author">
-            Анастасия Красильникова
-            <span class="reviews__author-span">@misssssiskras</span>
-          </p>
+        <div class="reviews__slider">
+          <ul class="reviews__slider-list">
+            <li class="reviews__slider-item reviews__slider-item--shown">
+              <p class="reviews__text">
+                Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!
+              </p>
+              <p class="reviews__author">Анастасия Красильникова</p>
+              <p class="reviews__author-inst">@misssssiskras</p>
+            </li>
+            <li class="reviews__slider-item">
+              <p class="reviews__text">
+                Мягкие и очень приятные. Цена невысокая, что приятно радует, студенту вполне по карману (мне пришлось попросить в долг у племянницы). Качественно сделаны, можно сказать, с любовь, с удовольствием преподнесла в качестве подарка племяннице вместо обещанных туфель. Оценила.
+              </p>
+              <p class="reviews__author">Виктория Бабенко</p>
+              <p class="reviews__author-inst">@vikibabenko</p>
+            </li>
+          </ul>
           <div class="reviews__toggles">
             <button type="button" class="reviews__toggle reviews__toggle--prev" aria-label="Переключить слайдер назад"></button>
             <button type="button" class="reviews__toggle reviews__toggle--next" aria-label="Переключить слайдер вперед"></button>
@@ -203,7 +228,7 @@
     </section>
     <section class="contacts">
       <div class="wrapper">
-        <h2 class="contacts__title title">
+        <h2 class="contacts__title title title--left">
           Контакты
         </h2>
         <div class="contacts__flex">

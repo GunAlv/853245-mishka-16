@@ -1,9 +1,13 @@
 .title {
   margin: 0;
-  font-size: 27px;
+  font-size: 25px;
   font-weight: 700;
   line-height: 30px;
   text-align: center;
+}
+
+.title--left {
+  text-align: left;
 }
 
 @media (min-width: $tablet) {

@@ -15,5 +15,9 @@
   .wrapper {
     width: 1150px;
     padding: 0 50px;
+
+    &--desktop {
+      padding-left: 220px;
+    }
   }
 }
