@@ -1,3 +1,6 @@
+var contactsMap = document.querySelector('.contacts__map');
+contactsMap.classList.remove('contacts__map--no-js');
+
 var menu = document.querySelector('.page-header__menu');
 var menuToggle = document.querySelector('.page-header__toggle');
 menu.classList.remove('page-header__menu--no-js');

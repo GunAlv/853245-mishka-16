@@ -227,56 +227,76 @@
       </div>
     </section>
     <section class="contacts">
-      <div class="wrapper">
-        <h2 class="contacts__title title title--left">
-          Контакты
-        </h2>
+      <div class="wrapper contacts--wrapper">
         <div class="contacts__flex">
           <div class="contacts__info">
-            <div class="contacts__item">
-              <p class="contacts__address">
-                e-mail:
-              </p>
-              <a href="mailto:info@mimimishkashop.ru" class="contacts__address link">
-                info@mimimishkashop.ru
-              </a>
-            </div>
-            <div class="contacts__item">
-              <p class="contacts__address">
-                адрес:
-              </p>
-              <p class="contacts__address">
-                г. Санкт-Петербург,
-                ул. Большая Конюшенная,
-                д. 19/8, офис 101
-              </p>
+            <h2 class="contacts__title title title--left">
+              Контакты
+            </h2>
+            <div class="contacts__items">
+              <div class="contacts__item">
+                <p class="contacts__address">
+                  e-mail:
+                </p>
+                <a href="mailto:info@mimimishkashop.ru" class="contacts__address link">
+                  info@mimimishkashop.ru
+                </a>
+              </div>
+              <div class="contacts__item">
+                <p class="contacts__address">
+                  адрес:
+                </p>
+                <p class="contacts__address contacts__address--city">
+                  г. Санкт-Петербург, <br>
+                  ул. Большая Конюшенная, <br>
+                  д. 19/8, офис 101
+                </p>
+              </div>
             </div>
           </div>
-          <div class="contacts__map">
+          <div class="contacts__map contacts__map--no-js">
             <picture>
+              <source media="(min-width: 1150px)" srcset="img/map-desktop@1x.jpg">
+              <source media="(min-width: 768px)" srcset="img/map-tablet@1x.jpg">
               <img src="img/map-mobile@1x.jpg" alt="ул. Большая Конюшенная, д. 19/8, офис 101" class="contacts__map-img" width="322" height="457">
             </picture>
+            <iframe class="contacts__iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.603625300295!2d30.320858715957424!3d59.93871916905443!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1556105330124!5m2!1sru!2sru" width="322" height="457" allowfullscreen=""></iframe>
           </div>
-          <a href="#" class="contacts__button button">Напишите нам</a>
+          <div class="contacts__button-container">
+            <a href="#" class="contacts__button button">Напишите нам</a>
+          </div>
         </div>
       </div>
     </section>
     <footer class="footer">
       <div class="wrapper">
         <div class="footer__flex">
-          <a class="footer__logo logo"></a>
+          <a class="footer__logo logo">
+            <svg class="logo__svg" width="102" height="34">
+              <use xlink:href="#icon-logo"></use>
+            </svg>
+          </a>
           <div class="footer__social social">
             <ul class="social__list">
               <li class="social__item">
                 <a href="#" class="social__link" aria-label="Mishka в Instagram">
+                  <svg class="social__svg" width="22" height="21">
+                    <use xlink:href="#icon-insta"></use>
+                  </svg>
                 </a>
               </li>
               <li class="social__item">
                 <a href="#" class="social__link" aria-label="Mishka в Facebook">
+                  <svg class="social__svg" width="15" height="28">
+                    <use xlink:href="#icon-fb"></use>
+                  </svg>
                 </a>
               </li>
               <li class="social__item">
                 <a href="#" class="social__link" aria-label="Mishka в Twitter">
+                  <svg class="social__svg" width="23" height="20">
+                    <use xlink:href="#icon-twitter"></use>
+                  </svg>
                 </a>
               </li>
             </ul>
@@ -286,7 +306,9 @@
               Разработано:
             </p>
             <a href="https://htmlacademy.ru/intensive/adaptive" class="copyright__link" aria-label="Сайт HTML Academy">
-
+              <svg class="copyright__svg" width="27" height="34">
+                <use xlink:href="#icon-htmlacademy"></use>
+              </svg>
             </a>
           </div>
         </div>

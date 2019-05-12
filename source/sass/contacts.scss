@@ -1,0 +1,228 @@
+.contacts {
+  padding-top: 35px;
+  overflow: hidden;
+  padding-bottom: 40px;
+}
+
+.contacts--wrapper {
+  padding: 0;
+}
+
+.contacts__info {
+  padding: 0 30px;
+}
+
+.contacts__address {
+  margin: 0;
+
+  &--city {
+    width: 145px;
+  }
+}
+
+.contacts__item {
+  color: $grey;
+  font-size: 15px;
+  display: flex;
+  margin-bottom: 28px;
+}
+
+.contacts__title {
+  margin-bottom: 25px;
+}
+
+.contacts__address:nth-child(2) {
+  margin-left: 32px;
+}
+
+.contacts__map {
+  position: relative;
+  margin-bottom: 39px;
+  margin-top: 37px;
+  width: 322px;
+  height: 457px;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 67px;
+    height: 100px;
+    background-image: url("../img/icon-map-pin.svg");
+    top: 140px;
+    left: 139px;
+    // left: 50%;
+    // transform: translateX(-50%);
+  }
+}
+
+.contacts__iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  z-index: 10;
+  border: none;
+}
+
+.contacts__map-img {
+  display: none;
+}
+
+.contacts__button-container {
+  padding: 0 30px;
+  margin: 0 auto;
+}
+
+.contacts__button {
+  min-width: 260px;
+}
+
+.contacts__map--no-js .contacts__map-img {
+  display: block;
+}
+
+.contacts__map--no-js .contacts__iframe {
+  display: none;
+}
+
+@media (max-width: 767px) {
+  .contacts__title {
+    font-size: 18px;
+  }
+}
+
+@media (min-width: $tablet) {
+  .contacts {
+    padding-top: 57px;
+    margin-bottom: 15px;
+  }
+
+  .contacts__info {
+    padding: 0 50px;
+  }
+
+  .contacts__map::before {
+    left: 363px;
+  }
+
+  .contacts__map-img,
+  .contacts__map,
+  .contacts__iframe {
+    width: 768px;
+    height: 457px;
+  }
+
+  .contacts__button {
+    min-width: 230px;
+  }
+
+  .contacts__button-container {
+    text-align: center;
+  }
+
+  .contacts__item {
+    font-size: 17px;
+
+    &:nth-child(2) {
+      margin-left: 55px;
+    }
+  }
+
+  .contacts__address:nth-child(2) {
+    margin-left: 26px;
+  }
+
+  .contacts__items {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+  }
+
+  .contacts__address--city {
+    width: 227px;
+  }
+
+  .contacts__title {
+    position: relative;
+    margin-bottom: 45px;
+
+    &::after {
+      position: absolute;
+      content: "";
+      width: 47px;
+      height: 81px;
+      background-image: url("../img/icon-flag.svg");
+      background-repeat: no-repeat;
+      top: -20px;
+      right: 0;
+    }
+  }
+
+  .contacts__map {
+    margin-top: 30px;
+    margin-bottom: 55px;
+  }
+}
+
+@media (min-width: $desktop) {
+  .contacts {
+    padding-top: 70px;
+    margin-bottom: 60px;
+  }
+
+  .contacts--wrapper {
+    width: 1150px;
+    padding: 0 50px;
+    margin: 0 auto;
+  }
+
+  .contacts__map,
+  .contacts__iframe,
+  .contacts__map-img {
+    width: 525px;
+    height: 457px;
+  }
+
+  .contacts__map {
+    margin: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+
+  .contacts__map::before {
+    left: 239px;
+  }
+
+  .contacts__info {
+    width: 350px;
+    margin-left: 175px;
+    padding: 0;
+    padding-top: 70px;
+  }
+
+  .contacts__item:nth-child(2) {
+    margin-left: 0;
+  }
+
+  .contacts__title {
+    margin-bottom: 50px;
+  }
+
+  .contacts__title::after {
+    left: -110px;
+    top: -5px;
+  }
+
+  .contacts__flex {
+    position: relative;
+  }
+
+  .contacts__button-container {
+    padding: 0;
+    margin: 0;
+    text-align: left;
+    margin-left: 175px;
+    margin-top: 55px;
+  }
+}

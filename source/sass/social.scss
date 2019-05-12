@@ -1,0 +1,34 @@
+.social {
+  max-width: 260px;
+}
+
+.social__list {
+  @include list-reset;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin-left: -40px;
+}
+
+.social__item {
+  margin-left: 40px;
+}
+
+.social__link {
+  display: block;
+}
+
+.social__svg {
+  transition: 0.15s;
+}
+
+.social__link:hover .social__svg,
+.social__link:focus .social__svg {
+  fill: #46c1ae;
+}
+
+.social__link:active .social__svg {
+  fill: #46c1ae;
+  opacity: 0.3;
+}
