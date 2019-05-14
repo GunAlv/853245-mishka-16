@@ -1,6 +1,6 @@
 .modal {
   width: 320px;
-  min-height: 336px;
+  height: 336px;
   border: 1px solid #c6c6c6;
   box-shadow: 0 5px 10px rgba(0, 1, 1, 0.25);
   padding: 26px 30px 46px 30px;
@@ -13,6 +13,11 @@
   background-color: #ffffff;
   opacity: 0;
   transition: 0.15s ease-in;
+
+  &--catalog {
+    position: fixed;
+    top: 30px;
+  }
 
   &--shown {
     opacity: 1;
@@ -94,7 +99,7 @@
 @media (min-width: $tablet) {
   .modal {
     width: 566px;
-    min-height: 336px;
+    height: 336px;
     padding: 30px 100px 46px 100px;
   }
 

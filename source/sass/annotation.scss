@@ -1,0 +1,46 @@
+.annotation {
+  min-height: 177px;
+  background-color: #f1f1f1;
+  padding-top: 70px;
+  margin-bottom: 30px;
+
+  &--order {
+    margin-bottom: 25px;
+  }
+}
+
+@media (max-width: 767px) {
+  .annotation__title {
+    font-size: 27px;
+  }
+}
+
+@media (min-width: $tablet) {
+  .annotation {
+    min-height: 226px;
+    padding-top: 95px;
+    margin-bottom: 80px;
+    position: relative;
+
+    &::after {
+      position: absolute;
+      content: "";
+      background-image: url("../img/bg-zigzag-fill.svg");
+      width: 100%;
+      height: 24px;
+      z-index: 5;
+      bottom: -12px;
+      left: 0;
+      background-size: auto 23px;
+      background-position: -5px top;
+      background-repeat: repeat;
+    }
+  }
+}
+
+@media (min-width: $desktop) {
+  .annotation {
+    min-height: 255px;
+    margin-bottom: 125px;
+  }
+}

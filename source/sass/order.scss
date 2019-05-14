@@ -1,0 +1,24 @@
+.order__descript {
+  margin: 0;
+  font-size: 13px;
+  line-height: 24px;
+  color: $grey;
+}
+
+@media (min-width: $tablet) {
+  .order__descript {
+    font-size: 17px;
+    line-height: 30px;
+    padding: 0 50px;
+  }
+
+  .order {
+    min-width: 768px;
+
+    &--wrapper {
+      width: auto;
+      padding: 0;
+      margin: 0;
+    }
+  }
+}

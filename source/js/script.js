@@ -1,16 +1,3 @@
-var contactsMap = document.querySelector('.contacts__map');
-contactsMap.classList.remove('contacts__map--no-js');
-
-var menu = document.querySelector('.page-header__menu');
-var menuToggle = document.querySelector('.page-header__toggle');
-menu.classList.remove('page-header__menu--no-js');
-menuToggle.classList.remove('toggle--no-js');
-
-menuToggle.addEventListener('click', function() {
-  menu.classList.toggle('page-header__menu--opened');
-  this.classList.toggle('toggle--close');
-});
-
 var goodButton = document.querySelector('.good-week__button');
 var modal = document.querySelector('.modal');
 var overlay = document.querySelector('.overlay');
@@ -33,6 +20,9 @@ function closeModal() {
   overlay.style.display = 'none';
   modal.classList.remove('modal--shown');
 }
+
+var contactsMap = document.querySelector('.contacts__map');
+contactsMap.classList.remove('contacts__map--no-js');
 
 var reviewItems = document.querySelectorAll('.reviews__slider-item');
 var prevBtn = document.querySelector('.reviews__toggle--prev');

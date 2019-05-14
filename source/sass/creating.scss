@@ -1,0 +1,206 @@
+.creating {
+  margin-bottom: 58px;
+}
+
+.creating__item {
+  border: 1px solid #ececec;
+  padding-bottom: 33px;
+  padding-top: 25px;
+  display: flex;
+  flex-direction: column;
+  transition: 0.15s;
+
+  &:hover {
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  &:active {
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+  }
+}
+
+.creating__title {
+  margin: 0;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
+  width: 130px;
+  margin-left: 90px;
+  position: relative;
+  order: 0;
+  margin-bottom: 20px;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 32px;
+    height: 32px;
+    background-image: url("../img/icon-video.svg");
+    top: 6px;
+    left: -60px;
+  }
+}
+
+.creating__texts {
+  padding: 0 34px;
+  order: 2;
+}
+
+.creating__descript {
+  margin: 0;
+  color: $grey;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 24px;
+  margin-bottom: 25px;
+}
+
+.creating__button {
+  min-width: 192px;
+}
+
+.creating__img {
+  display: block;
+  width: 260px;
+  height: 150px;
+}
+
+.creating__img-container {
+  position: relative;
+  margin-bottom: 30px;
+  order: 1;
+}
+
+.creating__play {
+  display: block;
+  position: absolute;
+  width: 101px;
+  height: 77px;
+  border-radius: 20px;
+  left: 50%;
+  top: 50%;
+  z-index: 10;
+  transform: translate(-50%, -50%);
+  background-image: url("../img/icon-play.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  transition: 0.3s ease-out;
+
+  &:hover,
+  &:focus {
+    width: 121px;
+    height: 92px;
+    background-size: 121px 92px;
+  }
+
+  &:active {
+    width: 101px;
+    height: 77px;
+    background-size: 101px 77px;
+    opacity: 0.3;
+  }
+}
+
+@media (min-width: $tablet) {
+  .creating {
+    margin-bottom: 63px;
+  }
+
+  .creating__item {
+    padding-bottom: 46px;
+    padding-top: 0;
+  }
+
+  .creating__img {
+    width: 668px;
+    height: 455px;
+  }
+
+  .creating__img-container {
+    order: 0;
+    margin-bottom: 35px;
+  }
+
+  .creating__title {
+    font-size: 20px;
+    width: auto;
+    margin-left: 107px;
+    order: 1;
+    margin-bottom: 32px;
+
+    &::before {
+      top: -4px;
+      left: -65px;
+    }
+  }
+
+  .creating__texts {
+    padding: 0 42px;
+  }
+
+  .creating__descript {
+    font-size: 15px;
+    line-height: 30px;
+    margin-bottom: 37px;
+  }
+
+  .creating__button {
+    width: 100%;
+  }
+}
+
+
+@media (min-width: $desktop) {
+  .creating {
+    margin-bottom: 105px;
+  }
+
+  .creating__item {
+    display: block;
+    padding-right: 58px;
+    position: relative;
+    min-height: 455px;
+  }
+
+  .creating__img,
+  .creating__img-container {
+    width: 682px;
+    height: 455px;
+  }
+
+  .creating__img-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  .creating__texts {
+    width: 350px;
+    margin-left: auto;
+    padding: 0;
+    padding-left: 120px;
+  }
+
+  .creating__title {
+    margin-top: 100px;
+    margin-left: 760px;
+    // margin-left: auto;
+    width: 150px;
+
+    &::before {
+      left: 0;
+      top: -50px;
+    }
+  }
+
+  .creating__button {
+    min-width: 230px;
+  }
+
+  .creating__descript {
+    margin-bottom: 50px;
+  }
+}
