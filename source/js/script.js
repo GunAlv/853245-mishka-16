@@ -6,11 +6,33 @@ var menuToggle = document.querySelector('.page-header__toggle');
 menu.classList.remove('page-header__menu--no-js');
 menuToggle.classList.remove('toggle--no-js');
 
-
 menuToggle.addEventListener('click', function() {
   menu.classList.toggle('page-header__menu--opened');
   this.classList.toggle('toggle--close');
-})
+});
+
+var goodButton = document.querySelector('.good-week__button');
+var modal = document.querySelector('.modal');
+var overlay = document.querySelector('.overlay');
+
+goodButton.addEventListener('click', function(evt) {
+  evt.preventDefault();
+  overlay.style.display = 'block';
+  modal.classList.add('modal--shown');
+});
+
+overlay.addEventListener('touchstart', function() {
+  closeModal();
+});
+
+overlay.addEventListener('click', function() {
+  closeModal();
+});
+
+function closeModal() {
+  overlay.style.display = 'none';
+  modal.classList.remove('modal--shown');
+}
 
 var reviewItems = document.querySelectorAll('.reviews__slider-item');
 var prevBtn = document.querySelector('.reviews__toggle--prev');
@@ -34,3 +56,4 @@ nextBtn.addEventListener('click', function() {
   }
   reviewItems[i].classList.add('reviews__slider-item--shown');
 });
+
