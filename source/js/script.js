@@ -46,4 +46,3 @@ nextBtn.addEventListener('click', function() {
   }
   reviewItems[i].classList.add('reviews__slider-item--shown');
 });
-
