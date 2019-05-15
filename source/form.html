@@ -58,12 +58,12 @@
             <div class="page-header__offers">
               <ul class="page-header__offers-list">
                 <li class="page-header__offers-item">
-                  <a href="" class="page-header__offers-link">
+                  <a href="#" class="page-header__offers-link">
                     Новые поступления
                   </a>
                 </li>
                 <li class="page-header__offers-item">
-                  <a href="" class="page-header__offers-link">
+                  <a href="#" class="page-header__offers-link">
                     Распродажа
                   </a>
                 </li>
@@ -91,13 +91,13 @@
     <form action="https://echo.htmlacademy.ru" method="post" class="order__form form">
       <div class="form__item form__item--type">
         <fieldset>
-          <div class="form__flex">
+          <div class="form__flex form__flex--type">
             <h2 class="form__legend form__legend--type">
               Тип
             </h2>
             <div class="form__container">
               <div class="form__container-item form__container-item--type">
-                <input type="radio" class="form__radio visually-hidden" id="accessories" name="type">
+                <input type="radio" class="form__radio visually-hidden" id="accessories" name="type" checked>
                 <label for="accessories" class="form__label form__radio-label">Аксессуар для интерьера</label>
               </div>
               <div class="form__container-item form__container-item--type">
@@ -118,11 +118,11 @@
               <div class="form__list-container">
                 <ul class="form__list">
                   <li class="form__list-item">
-                    <input type="checkbox" class="form__checkbox visually-hidden" id="white" name="white">
+                    <input type="checkbox" class="form__checkbox visually-hidden" id="white" name="white" checked>
                     <label for="white" class="form__label form__checkbox-label">Белый</label>
                   </li>
                   <li class="form__list-item">
-                    <input type="checkbox" class="form__checkbox visually-hidden" id="grey" name="grey">
+                    <input type="checkbox" class="form__checkbox visually-hidden" id="grey" name="grey" checked>
                     <label for="grey" class="form__label form__checkbox-label">Серый</label>
                   </li>
                   <li class="form__list-item">
@@ -149,11 +149,11 @@
       </div>
       <div class="form__item form__item--name">
         <fieldset>
-          <div class="form__flex">
+          <div class="form__flex form__flex--name">
             <h2 class="form__legend form__legend--name">
               Фио
             </h2>
-            <div class="form__container form__container--width">
+            <div class="form__container form__container--name">
               <div class="form__container-item form__container-item--name">
                 <label for="user-name" class="form__label">Имя:</label>
                 <input type="text" class="form__input form__input--name" id="user-name" name="user-name" placeholder="Введите ваше имя*">
@@ -173,11 +173,11 @@
       <div class="form__items-grey">
         <div class="form__item form__item--tel">
           <fieldset>
-            <div class="form__flex">
+            <div class="form__flex form__flex--tel">
               <h2 class="form__legend">
                 Тел
               </h2>
-              <div class="form__container">
+              <div class="form__container form__container--tel">
                 <label for="tel" class="visually-hidden">Ваш номер телефона</label>
                 <div class="form__input-icon">
                   <input type="tel" class="form__input" name="tel" id="tel" placeholder="+7 ХХХ ХХХ ХХ ХХ*">
@@ -191,15 +191,15 @@
         </div>
         <div class="form__item form__item--email">
           <fieldset>
-            <div class="form__flex">
+            <div class="form__flex form__flex--email">
               <h2 class="form__legend form__legend--email">
                 E-mail
               </h2>
-              <div class="form__container">
+              <div class="form__container form__container--email">
                 <label for="email" class="visually-hidden">Ваша почта</label>
                 <div class="form__input-icon">
                   <input type="email" class="form__input" name="email" id="email" placeholder="Ваш Email*">
-                  <svg class="form__svg form__svg--email" width="32" height="21">
+                  <svg class="form__svg form__svg--email" width="32" height="31">
                     <use xlink:href="#icon-mail"></use>
                   </svg>
                 </div>
@@ -210,7 +210,7 @@
       </div>
       <div class="form__item form__item--add">
         <fieldset>
-          <div class="form__flex">
+          <div class="form__flex form__flex--textarea">
             <h2 class="form__legend form__legend--add">
               Доп
             </h2>
@@ -262,10 +262,10 @@
           </ul>
         </div>
         <div class="footer__copyright copyright">
-          <p class="copyright__text">
-            Разработано:
-          </p>
           <a href="https://htmlacademy.ru/intensive/adaptive" class="copyright__link" aria-label="Сайт HTML Academy">
+            <p class="copyright__text">
+              Разработано:
+            </p>
             <svg class="copyright__svg" width="27" height="34">
               <use xlink:href="#icon-htmlacademy"></use>
             </svg>
@@ -274,8 +274,8 @@
       </div>
     </div>
   </footer>
-  <div class="overlay"></div>
   <script src="js/svgxuse.min.js"></script>
   <script src="js/menu.min.js"></script>
+  <script src="js/form.min.js"></script>
 </body>
 </html>

@@ -58,12 +58,12 @@
               <div class="page-header__offers">
                 <ul class="page-header__offers-list">
                   <li class="page-header__offers-item">
-                    <a href="" class="page-header__offers-link">
+                    <a href="#" class="page-header__offers-link">
                       Новые поступления
                     </a>
                   </li>
                   <li class="page-header__offers-item">
-                    <a href="" class="page-header__offers-link">
+                    <a href="#" class="page-header__offers-link">
                       Распродажа
                     </a>
                   </li>
@@ -82,18 +82,18 @@
         <h1 class="promo__title title">
           Милые штуки ручной<br> работы для дома
         </h1>
-        <ul class="promo__list">
-          <li class="promo__item promo__item--left">
-            <a href="#" class="promo__option">
+        <div class="promo__list">
+          <a href="catalog.html" class="promo__item promo__item--left">
+            <p class="promo__option">
               Предметы интерьера
-            </a>
-          </li>
-          <li class="promo__item promo__item--right">
-            <a href="#" class="promo__option">
+            </p>
+          </a>
+          <a href="catalog.html" class="promo__item promo__item--right">
+            <p class="promo__option">
               Детские игрушки
-            </a>
-          </li>
-        </ul>
+            </p>
+          </a>
+        </div>
       </div>
     </section>
     <section class="good-week">
@@ -149,9 +149,12 @@
             </div>
           </div>
           <picture>
-            <source media="(min-width: 1150px)" srcset="img/triple-set-desktop@1x.jpg">
-            <source media="(min-width: 768px)" srcset="img/triple-set-tablet@1x.jpg">
-            <img src="img/triple-set-mobile@1x.jpg" alt="Вязаные корзинки" class="good-week__img" width="260" height="315">
+            <source type="image/webp" media="(min-width: 1150px)" srcset="img/triple-set-desktop@1x.webp 1x, img/triple-set-desktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)" srcset="img/triple-set-tablet@1x.webp 1x, img/triple-set-tablet@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 320px)" srcset="img/triple-set-mobile@1x.webp 1x, img/triple-set-mobile@2x.webp 2x">
+            <source media="(min-width: 1150px)" srcset="img/triple-set-desktop@1x.jpg 1x, img/triple-set-desktop@2x.jpg 2x">
+            <source media="(min-width: 768px)" srcset="img/triple-set-tablet@1x.jpg 1x, img/triple-set-tablet@2x.jpg 2x">
+            <img src="img/triple-set-mobile@1x.jpg" srcset="img/triple-set-mobile@2x.jpg 2x" alt="Вязаные корзинки" class="good-week__img" width="260" height="315">
           </picture>
         </div>
       </div>
@@ -280,9 +283,12 @@
           </div>
           <div class="contacts__map contacts__map--no-js">
             <picture>
-              <source media="(min-width: 1150px)" srcset="img/map-desktop@1x.jpg">
-              <source media="(min-width: 768px)" srcset="img/map-tablet@1x.jpg">
-              <img src="img/map-mobile@1x.jpg" alt="ул. Большая Конюшенная, д. 19/8, офис 101" class="contacts__map-img" width="322" height="457">
+              <source type="image/webp" media="(min-width: 1150px)" srcset="img/map-desktop@1x.webp 1x, img/map-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/map-tablet@1x.webp 1x, img/map-tablet@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 320px)" srcset="img/map-mobile@1x.webp 1x, img/map-mobile@2x.webp 2x">
+              <source media="(min-width: 1150px)" srcset="img/map-desktop@1x.jpg 1x, img/map-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/map-tablet@1x.jpg 1x, img/map-tablet@2x.jpg 2x">
+              <img src="img/map-mobile@1x.jpg" srcset="img/map-mobile@2x.jpg 2x" alt="ул. Большая Конюшенная, д. 19/8, офис 101" class="contacts__map-img" width="322" height="457">
             </picture>
             <iframe class="contacts__iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.603625300295!2d30.320858715957424!3d59.93871916905443!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1556105330124!5m2!1sru!2sru" width="322" height="457" allowfullscreen=""></iframe>
           </div>
@@ -326,10 +332,10 @@
             </ul>
           </div>
           <div class="footer__copyright copyright">
-            <p class="copyright__text">
-              Разработано:
-            </p>
             <a href="https://htmlacademy.ru/intensive/adaptive" class="copyright__link" aria-label="Сайт HTML Academy">
+              <p class="copyright__text">
+                Разработано:
+              </p>
               <svg class="copyright__svg" width="27" height="34">
                 <use xlink:href="#icon-htmlacademy"></use>
               </svg>

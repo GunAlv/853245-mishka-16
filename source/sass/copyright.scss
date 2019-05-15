@@ -3,9 +3,6 @@
   color: #000000;
   font-weight: 700;
   line-height: 18px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   position: relative;
 
   &::before {
@@ -19,14 +16,18 @@
 }
 
 .copyright__text {
+  color: #000000;
   margin: 0;
 }
 
 .copyright__link {
-  margin-left: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .copyright__svg {
+  margin-left: 30px;
   fill: $blue;
   transform: 0.15s;
 }
@@ -38,6 +39,10 @@
 
 .copyright__link:active .copyright__svg {
   fill: #46c1ae;
+  opacity: 0.3;
+}
+
+.copyright__link:active .copyright__text {
   opacity: 0.3;
 }
 

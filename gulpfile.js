@@ -83,7 +83,7 @@ gulp.task("html", function () {
 gulp.task("tiny", function () {
   return gulp.src("source/img/**/*.@(png|jpg|jpeg)")
     .pipe(tinypng())
-    .pipe(gulp.dest("build/img"));
+    .pipe(gulp.dest("source/img"));
 });
 
 
