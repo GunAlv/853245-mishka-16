@@ -18,6 +18,17 @@ overlay.addEventListener('click', function() {
   closeModal();
 });
 
+window.addEventListener('keydown', function(evt) {
+  if (evt.keyCode === 27 || evt.keyCode === 13) {
+    if (modal.classList.contains('modal--shown') || modal.classList.contains('modal--shown')) {
+      evt.preventDefault();
+      overlay.style.display = 'none';
+      modal.classList.remove('modal--shown');
+      modal.classList.remove('modal--shown');
+    }
+  }
+});
+
 function closeModal() {
   overlay.style.display = 'none';
   modal.classList.remove('modal--shown');
